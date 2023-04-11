@@ -11,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  background-color: #333;
+  background-color: #ddd;
   color: #fff;
 }
 
@@ -55,10 +55,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #0047ab;
+  background-color: #1d417b;
   color: #fff;
   padding: 1rem;
-  border-bottom: 5px solid #fff;
+  border-bottom: 7px solid #fff;
+  text-align: center;
+
 }
 
 .logo {

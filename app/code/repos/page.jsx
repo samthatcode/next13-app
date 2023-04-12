@@ -1,14 +1,14 @@
-import Link from 'next/link';
-import { FaStar, FaCodeBranch, FaEye } from 'react-icons/fa';
+import Link from "next/link";
+import { FaStar, FaCodeBranch, FaEye } from "react-icons/fa";
 
 async function fetchRepos() {
   const response = await fetch(
     "https://api.github.com/users/samthatcode/repos",
     {
-        next: {
-          revalidate: 60,
-        },
-      }
+      next: {
+        revalidate: 60,
+      },
+    }
   );
 
   await new Promise((resolve) => setTimeout(resolve, 1000)); // Wait 1 second
@@ -20,7 +20,7 @@ const ReposPage = async () => {
   const repos = await fetchRepos();
   return (
     <div className="repos-container">
-      <h2>Repositories</h2>
+      <h2 className="text-white">Repositories</h2>
       <ul className="repo-list">
         {repos.map((repo) => (
           <li key={repo.id}>

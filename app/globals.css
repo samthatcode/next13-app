@@ -19,6 +19,7 @@ body {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 1rem;
+  
 }
 
 .btn {
@@ -31,6 +32,7 @@ body {
   font-size: 1rem;
   cursor: pointer;
   text-decoration: none;
+  margin-top: 15px;
 }
 
 .btn:hover {
@@ -60,7 +62,7 @@ body {
   padding: 1rem;
   border-bottom: 7px solid #fff;
   text-align: center;
-
+  
 }
 
 .logo {
